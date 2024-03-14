@@ -19,6 +19,7 @@ console.log('random-computer-number' , randomComputerNumber);
 let sum = userNumber + randomComputerNumber;
 console.log('sum' , sum);
 // 5 - Creo una funzione per stabilire se la somma dei due numeri è pari o dispari
+let returnEvenOrOdd = evenOrOdd(sum);
 // 6 - Dichiaro il vincitore
         // - Se il giocatore ha scelto pari e la somma è pari vince il giocatore
             // - altrimenti vince il computer
@@ -31,3 +32,16 @@ console.log('sum' , sum);
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
+
+// Even or Odd Function
+function evenOrOdd (numberSum){
+    let sumEvenOrOdd;
+    if(numberSum % 2 === 0){
+        let sumEvenOrOdd = 'even';
+        console.log('sum-even-or-odd' , sumEvenOrOdd);
+    }else{
+        let sumEvenOrOdd = 'odd';
+        console.log('sum-even-or-odd' , sumEvenOrOdd);
+    }
+    return sumEvenOrOdd;
+}
