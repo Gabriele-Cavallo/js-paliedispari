@@ -16,7 +16,6 @@ function reverseWord(reverse){
     let reverseWord = '';
     for (let i = reverse.length -1; i >=0; i--) {
         let reverseUserWord = reverse[i];
-        console.log('reverse-word' , reverseUserWord);
         reverseWord += reverseUserWord;
     }
     return reverseWord;
