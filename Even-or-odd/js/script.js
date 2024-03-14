@@ -16,6 +16,8 @@ console.log('user-number' , userNumber);
 let randomComputerNumber = getRndInteger(1, 5)
 console.log('random-computer-number' , randomComputerNumber);
 // 4 - Sommo i numeri di utente e computer
+let sum = userNumber + randomComputerNumber;
+console.log('sum' , sum);
 // 5 - Creo una funzione per stabilire se la somma dei due numeri è pari o dispari
 // 6 - Dichiaro il vincitore
         // - Se il giocatore ha scelto pari e la somma è pari vince il giocatore
@@ -26,7 +28,6 @@ console.log('random-computer-number' , randomComputerNumber);
 //  FUNCTIONS
 
 // Random cumputer number
-
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
