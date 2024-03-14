@@ -5,11 +5,13 @@
 
 // 1 - Chiedo all'utente una parola
 let userWord = prompt('Dimmi una parola');
-console.log('user-word' , userWord);
 let palindromeWord = reverseWord(userWord);
-console.log('reverse' , palindromeWord);
 
 // 2 - Creo una funzione per "leggere" la parola dell'utente al contrario
+
+// reverseWord function ---> funzione per "leggere" al contrario la parola inserita dall'utente
+// reverse ---> dato tipo stringa ottenuto dalla variabile palindromeWord dipendente dal prompt userWord
+// return ---> ritorna con la variabile reverseWord la stringa letta nella variabile reverse ma al contrario
 function reverseWord(reverse){
     let reverseWord = '';
     for (let i = reverse.length -1; i >=0; i--) {
