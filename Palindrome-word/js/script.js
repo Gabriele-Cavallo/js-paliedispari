@@ -6,7 +6,9 @@
 // 1 - Chiedo all'utente una parola
 let userWord = prompt('Dimmi una parola');
 console.log('user-word' , userWord);
-reverseWord(userWord);
+let palindromeWord = reverseWord(userWord);
+console.log('reverse' , palindromeWord);
+
 // 2 - Creo una funzione per "leggere" la parola dell'utente al contrario
 function reverseWord(reverse){
     let reverseWord = '';
@@ -15,7 +17,15 @@ function reverseWord(reverse){
         console.log('reverse-word' , reverseUserWord);
         reverseWord += reverseUserWord;
     }
-    console.log('reverse' , reverseWord);
+    return reverseWord;
 }
-    // - se la parola inserita dall'utente e quella al contrario della funzione sono uguali allora la parola è palindroma
-    // - altrimenti se sono diverse la parola non è palindroma
+// - se la parola inserita dall'utente e quella al contrario della funzione sono uguali allora la parola è palindroma
+// - altrimenti se sono diverse la parola non è palindroma
+let userMessage;
+    if(userWord === palindromeWord){
+        userMessage = 'La parola è palindroma!!!';
+    }else{
+        userMessage = 'La parola non è palindroma!!!';
+    }
+alert(userMessage);
+    
