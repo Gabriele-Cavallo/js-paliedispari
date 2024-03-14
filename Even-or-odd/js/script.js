@@ -21,10 +21,22 @@ console.log('sum' , sum);
 // 5 - Creo una funzione per stabilire se la somma dei due numeri è pari o dispari
 let returnEvenOrOdd = evenOrOdd(sum);
 // 6 - Dichiaro il vincitore
-        // - Se il giocatore ha scelto pari e la somma è pari vince il giocatore
-            // - altrimenti vince il computer
-        // - Se la somma è dispari e il giocatore ha scelto dispari vince
-            // - altrimenti vince il computer
+// let userMessage;
+//         // - Se il giocatore ha scelto pari e la somma è pari vince il giocatore
+//             // - altrimenti vince il computer
+//             if (userEvenOrOdd === 'pari' && returnEvenOrOdd === 'even'){
+//                 userMessage ='Complimenti hai vinto!!!';
+//             }else if (userEvenOrOdd === 'pari' && returnEvenOrOdd === 'odd'){
+//                 userMessage ='Hai perso!!!';
+//             }
+//         // - Se la somma è dispari e il giocatore ha scelto dispari vince
+//             // - altrimenti vince il computer
+//             if (userEvenOrOdd === 'dispari' && returnEvenOrOdd === 'odd'){
+//                 userMessage ='Complimenti hai vinto!!!';
+//             }else if(userEvenOrOdd === 'dispari' && returnEvenOrOdd === 'even'){
+//                 userMessage ='Hai perso!!!';
+//             }
+// alert(userMessage);
 
 //  FUNCTIONS
 
@@ -37,11 +49,10 @@ function getRndInteger(min, max) {
 function evenOrOdd (numberSum){
     let sumEvenOrOdd;
     if(numberSum % 2 === 0){
-        let sumEvenOrOdd = 'even';
-        console.log('sum-even-or-odd' , sumEvenOrOdd);
+        sumEvenOrOdd = 'even';
     }else{
-        let sumEvenOrOdd = 'odd';
-        console.log('sum-even-or-odd' , sumEvenOrOdd);
+        sumEvenOrOdd = 'odd';
     }
+    console.log('summ-even-or-odd' , sumEvenOrOdd);
     return sumEvenOrOdd;
 }
