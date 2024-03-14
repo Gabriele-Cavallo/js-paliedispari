@@ -8,16 +8,12 @@
 
 // 1 - Chiedo all'utente di scegliere pari o dispari
 let userEvenOrOdd = prompt('Scegli pari o dispari');
-console.log('user-even-or-odd' , userEvenOrOdd);
 // 2 - Chiedo all'utente un numero da 1 a 5
 let userNumber = parseFloat(prompt('Dimmi un numero da 1 a 5'));
-console.log('user-number' , userNumber);
 // 3 - Genero un numero random da 1 a 5 per il computer (usando una funzione).
 let randomComputerNumber = getRndInteger(1, 5)
-console.log('random-computer-number' , randomComputerNumber);
 // 4 - Sommo i numeri di utente e computer
 let sum = userNumber + randomComputerNumber;
-console.log('sum' , sum);
 // 5 - Creo una funzione per stabilire se la somma dei due numeri è pari o dispari
 let returnEvenOrOdd = evenOrOdd(sum);
 // 6 - Dichiaro il vincitore
@@ -36,7 +32,10 @@ let userMessage;
             }else if(userEvenOrOdd === 'dispari' && returnEvenOrOdd === 'even'){
                 userMessage ='Hai perso!!!';
             }
-alert(userMessage);
+alert(`${userMessage} 
+Hai scelto ${userEvenOrOdd}, il tuo numero è ${userNumber}
+Il numero del computer è ${randomComputerNumber}
+La loro somma è ${sum} ed è ${returnEvenOrOdd}`);
 
 //  FUNCTIONS
 
@@ -53,6 +52,5 @@ function evenOrOdd (numberSum){
     }else{
         sumEvenOrOdd = 'odd';
     }
-    console.log('summ-even-or-odd' , sumEvenOrOdd);
     return sumEvenOrOdd;
 }
