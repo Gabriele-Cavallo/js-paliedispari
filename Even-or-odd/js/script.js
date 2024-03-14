@@ -45,6 +45,9 @@ function getRndInteger(min, max) {
   }
 
 // Even or Odd Function
+// function per stabilire se un numero intero è pari o dispari
+// numberSum --> numero intero dato dalla somma del numero del giocatore e quello del computer
+// return --> ritorna se il numero è pari o dispari nella variabile returnEvenOrOdd
 function evenOrOdd (numberSum){
     let sumEvenOrOdd;
     if(numberSum % 2 === 0){
