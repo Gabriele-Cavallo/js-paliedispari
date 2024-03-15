@@ -9,7 +9,7 @@
 // 1 - Chiedo all'utente di scegliere pari o dispari
 let userEvenOrOdd = prompt('Scegli pari o dispari');
 // 2 - Chiedo all'utente un numero da 1 a 5
-let userNumber = parseFloat(prompt('Dimmi un numero da 1 a 5'));
+let userNumber = parseInt(prompt('Dimmi un numero da 1 a 5'));
 // 3 - Genero un numero random da 1 a 5 per il computer (usando una funzione).
 let randomComputerNumber = getRndInteger(1, 5)
 // 4 - Sommo i numeri di utente e computer
